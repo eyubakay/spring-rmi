@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.rmi.contract</groupId>
+  <artifactId>greeting-service</artifactId>
+  <version>${greeting-service.contract.version}</version>
+  <packaging>jar</packaging>
+
+  <name>greeting-service-contract</name>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <greeting-service.contract.version>1.0.1</greeting-service.contract.version>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <base.lib.version>1.0.1</base.lib.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.rmi.lib</groupId>
+      <artifactId>base-lib</artifactId>
+      <version>${base.lib.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>${project.artifactId}</finalName>
+  </build>
+</project>
